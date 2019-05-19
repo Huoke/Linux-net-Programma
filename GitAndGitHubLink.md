@@ -1,6 +1,9 @@
 # Git 和GitHub 关联
-因为本地 Git仓库和 GitHub仓库 之间的传输是通过SSH加密传输的, GitHub需要识别是否是你推送, GitHub只要知道了你的公钥, 就可以确认只有你自己才能推送, 所以需要配置ssh key。
+使用git 将项目上传到GitHub上,首先要有GitHub账号,这就不用说了，没有的先注册，地址：https://github.com. 
+没有仓库的话，先新创建一个仓库.
+![avatar](https://github.com/Huoke/Linux-net-Programma/blob/master/gitLinkGitHub04.png)
 
+因为本地 Git仓库和 GitHub仓库 之间的传输是通过SSH加密传输的, GitHub需要识别是否是你推送, GitHub只要知道了你的公钥, 就可以确认只有你自己才能推送, 所以需要配置ssh key。
 1. 在用户主目录(C:\Users\Administrator) 下, 看看有没有.ssh文件, 如果有, 再看看文件下有没有id_rsa和id_rsa.pub这两个文件, 如果已经有了, 可直接到下一步.
 如果没有, 打开git bash , 输入命令, 创建SSH key
 ssh-keygen -t rsa -C “7306@qq.com” //7306 是你自己注册的GitHub 邮箱
