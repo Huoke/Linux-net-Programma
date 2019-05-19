@@ -35,5 +35,14 @@ id_rsa是私钥, id_rsa.pub是公钥, 可以公开.
  git remote add origin git@github.com:Huoke/Linux-net-Programma.git //关联一个远程库命令, git@github.com:Huoke/Linux-net-Programma.git这个是自己远程库
  git push -u origin master //关联后,第一次推送 master 分支的所有内容命令，此后，每次本地提交后，就可以使用命令git push origin master推送最新修改
 ```
-
+# VS Code 关联 git
+1. 文件->首选项->设置->搜索git.path->点击编辑->找到你的电脑git的安装目录，找到里面的bin文件夹，里面的git.exe文件把该文件的完整路径复制下来
+   参见下图:
+   ![avatar]()
+2. 为了方便可以把VSCode的终端配置成为 Git -bash 终端
+   还是在设置里 搜索 terminal.integrated.shell.windows,然后复制安装目录下的bin文件夹里面的bash.exe文件目录更新到用户设置里面
+   
+   如图:
+   ![avatar]()
+3. 快捷键 Ctrl+~ 打开终端
 
