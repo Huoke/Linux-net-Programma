@@ -9,26 +9,26 @@
 ssh-keygen -t rsa -C “7306@qq.com” //7306 是你自己注册的GitHub 邮箱
 直接回车就是喽:
 见下图:
-![avatar](http://baidu.com/pic/doge.png)
+![avatar](https://github.com/Huoke/Linux-net-Programma/blob/master/gitLinkGitHub05.png)
 出现上图, 就说创建成功了, 再去用户主目录里找.ssh文件夹, 里面有id_rsa和id_rsa.pub两个文件,这两个就是SSH Key的秘钥对.
 id_rsa是私钥, id_rsa.pub是公钥, 可以公开.
 2. 接下来到GitHub上, 打开 "Accouny settings" -- "SSH Key" 页面, 然后点击 “Add SSH Key”, 填上 Title(随意写),
 在Key文件框里粘粘 id_rsa.pub 文件里面的全部内容。
 见下图:
-![avatar](http://baidu.com/pic/doge.png)
+![avatar](https://github.com/Huoke/Linux-net-Programma/blob/master/gitLinkGitHub02.png)
 点击 “Add Keys”, 你就应该看到已经添加的Key, 可以添加多个Key
 见下图:
-![avatar](http://baidu.com/pic/doge.png)
-
+![avatar](https://github.com/Huoke/Linux-net-Programma/blob/master/gitLinkGitHub01.png)
 3. 验证是否成功, 在git bash 里面输入下面命令:
  > ssh -T git@github.com 
- ![avatar](http://baidu.com/pic/doge.png)
 
- 4.下面开始设置username和email，因为github每次commit都会记录他们
+ ![avatar](https://github.com/Huoke/Linux-net-Programma/blob/master/gitLinkGitHub03.png)
+
+4. 下面开始设置username和email，因为github每次commit都会记录他们
  $ git config --global user.name  "name"//你的GitHub登陆名
  $ git config --global user.email "123@126.com"//你的GitHub注册邮箱   
 
- 5.接下来就是把本地仓库传到github上去，之前在GitHub上建好一个新的仓库,有一个页面,完全按照上面指示操作就可以了.
+5. 接下来就是把本地仓库传到github上去，之前在GitHub上建好一个新的仓库,有一个页面,完全按照上面指示操作就可以了.
  >echo "# Linux-net-Programma" >> README.md
  >git init
  >git add README.md
