@@ -46,3 +46,29 @@ id_rsa是私钥, id_rsa.pub是公钥, 可以公开.
    ![avatar]()
 3. 快捷键 Ctrl+~ 打开终端
 
+# VScode Remote 远程开发与调试
+## 简介
+最近VScode发布了远程编程与调试的插件 Remote Development，使用这个插件可以在很多情况下替代vim直接远程修改与调试服务器上的代码，同时具备代码高亮与不全功能，就和在本地使用VScode一样。终于不用在服务器端翻来覆去的配置vim插件了。
+
+本文介绍如何通过ssh的方法连接到远程服务器上，另外插件还提供了连接到WSL和容器的功能。
+>No source code needs to be on your local machine to gain these benefits since Remote Development runs commands and extensions directly on the remote machine.
+
+这个远程开发插件包包含三个插件:
+1. Remote - SSH -  通过使用SSH 打开在远程机器/ VM 或者 WSL 上的文件夹，在任何地方都能操作源代码 .
+2. Remote - Container - 可以打开容器中的任何文件夹。
+3. Remote - WSL - 可以打开windows的linux子系统的任何文件夹。
+
+## Installation
+安装vs code-insiders和这个扩展包。 
+remote-ssh:windows：安装一个与openssh兼容的ssh客户机，并确保ssh命令在您的路径中。
+远程容器：为您的操作系统安装和配置Docker。 
+### Windows/MacOS用户： 
+1. 为Mac/Windows安装Docker桌面。（目前不支持Docker工具箱。） 
+2. 右键单击Docker任务栏项，并更新设置/首选项>共享驱动器/文件与要在容器中打开的任何源代码位置共享。如果遇到麻烦，请参阅此处了解避免共享常见问题的提示。
+3. 
+### Linux用户：
+### Remote-WSL：
+## 配置过程
+- 第一步
+  
+  1. 远程主机安装ssh-server
